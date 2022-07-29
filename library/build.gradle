@@ -1,9 +1,10 @@
 plugins {
     id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
 
-android {
+ android {
     compileSdk 31
 
     defaultConfig {
@@ -44,7 +45,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.party.websocket'
                 artifactId = 'kitsocket'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
